@@ -418,7 +418,7 @@ h2:hover span{
  
 .flip-card {
   background-color: transparent;
-  width: 400px;
+  width: auto;
   height: 350px;
   perspective: 1000px;
 }
@@ -432,7 +432,7 @@ h2:hover span{
 
 .flip-card-inner {
   position: relative;
-  width: 100%;
+  width: auto;
   height: 100%;
   text-align: center;
   transition: transform 0.6s;
@@ -461,7 +461,7 @@ h2:hover span{
 }
 
 .flip-card-back {
-  background-color: rgb(73, 106, 255);
+  background-color: rgb(33, 74, 253);
   color: white;
   transform: rotateY(180deg);
 }

@@ -57,6 +57,22 @@
         </div>
   
 </main>
+
+<!-- JavaScript user Input -->
+
+<h3>Click the button below to enter your favorite Ann Arbor food or restaurant! </h3>
+<button onclick="myFunction()">Click Here</button>
+<p id="foodinput"></p>
+<script>
+function myFunction() {
+  var food = prompt("Please enter food name here: ", " ");
+  if (food != null) {
+    document.getElementById("foodinput").innerHTML =
+    "Your favorite Ann Arbor food is " + food + "! Great Choice :)";
+  }
+}
+</script>
+
 <footer>
     
   <h3>Contact Me!</h3>
@@ -82,4 +98,5 @@ method="POST"
 </div>
 <br>
 </footer>
+</body>
   </html>
