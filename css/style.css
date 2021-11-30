@@ -9,7 +9,7 @@
     
     
         li a {
-            font-size: 20px;
+            font-size: 25px;
             text-decoration: none;
             text-align: left;
           }
@@ -29,6 +29,30 @@
   .header{
     background-attachment: scroll;
   }
+
+  .flip-card-inner{
+    animation-duration: 0.001ms !important;
+            animation-iteration-count: 1 !important; 
+            transition-duration: 0.001ms !important;
+            animation: none;
+  }
+
+  flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+  animation-duration: 0.001ms !important;
+            animation-iteration-count: 1 !important; 
+            transition-duration: 0.001ms !important;
+            animation: none;
+}
+
+.flip-card-back{
+  animation-duration: 0.001ms !important;
+            animation-iteration-count: 1 !important; 
+            transition-duration: 0.001ms !important;
+            animation: none;
+}
         } 
 
 .gridsoulcycle{
@@ -99,6 +123,13 @@ h1{
 	font-size: 55px; 
     font-weight: bold;
     color: rgb(99, 0, 69);
+    webkit-text-stroke: 1px white;
+   text-shadow:
+       3px 3px 0 rgb(255, 255, 255),
+     -1px -1px 0 rgb(255, 255, 255),  
+     1px -1px 0 white,
+      -1px 1px 0 white,
+       1px 1px 0 white;
     
 }
 
@@ -202,7 +233,7 @@ nav li{
 nav .current{
     background-color: lightcyan;
     font-weight: bold;
-    font-size: 120%;
+    font-size: 140%;
 
 
 }
@@ -210,8 +241,16 @@ nav .current{
 
 
 a{
-    color:midnightblue;
+    font-size: 20px;
     text-decoration:none;
+    -webkit-text-stroke: 1px midnightblue;
+   text-shadow:
+       3px 3px 0 rgb(255, 255, 255),
+     -1px -1px 0 rgb(255, 255, 255),  
+     1px -1px 0 white,
+      -1px 1px 0 white,
+       1px 1px 0 white;
+      
 }
 /*Added this so the links stay the same color*/
 a:visited{color:midnightblue}
@@ -465,5 +504,6 @@ h2:hover span{
   color: white;
   transform: rotateY(180deg);
 }
+
 
 
