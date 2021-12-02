@@ -183,7 +183,7 @@ header{
     position: relative;
     vertical-align: top;
     transform-origin: center top;
-    object-fit: contain;
+    object-fit: fill;
   }
 
 
